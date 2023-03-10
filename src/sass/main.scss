@@ -1,3 +1,11 @@
+$darkBlue: rgb(2, 2, 22);
+$bigFont: rgb(243, 50, 82);
+$smallFont: rgb(254, 188, 188);
+
+
+body {
+  background-color: $darkBlue;
+}
 
 header {
   display: flex;
@@ -5,6 +13,6 @@ header {
   width: 100%;
 
   h1 {
-    color: pink;
+    color: $bigFont;
   }
 }

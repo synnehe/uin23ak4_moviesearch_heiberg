@@ -1,0 +1,10 @@
+header {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+header h1 {
+  color: pink;
+}
+
+/*# sourceMappingURL=main.css.map */

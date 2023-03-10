@@ -1,7 +1,7 @@
 import './App.css';
 import './css/main.css';
 import Header from './components/Header';
-import Article from './components/Article';
+import Moviecard from './components/Moviecard';
 import Search from './components/Search';
 
 function App() {
@@ -10,7 +10,7 @@ function App() {
       <Header/>
       <main>
         <Search/>
-        <Article/>
+        <Moviecard/>
       </main>
     </body>
   );

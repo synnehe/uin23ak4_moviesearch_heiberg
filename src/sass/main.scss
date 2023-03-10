@@ -1,7 +1,10 @@
-$darkBlue: rgb(2, 2, 22);
+$darkBlue: rgb(8, 8, 45);
 $bigFont: rgb(243, 50, 82);
 $smallFont: rgb(254, 188, 188);
 
+* {
+  color: $smallFont;
+}
 
 body {
   background-color: $darkBlue;
@@ -15,4 +18,19 @@ header {
   h1 {
     color: $bigFont;
   }
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+#article-card {
+ background-color: rgb(1, 1, 12);
+ max-width: 300px;
+ width: 100%;
+ margin: 1rem;
+ padding: 1rem;
+ border-radius: 2px;
 }

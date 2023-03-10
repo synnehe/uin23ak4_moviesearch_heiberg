@@ -1,5 +1,9 @@
+* {
+  color: rgb(254, 188, 188);
+}
+
 body {
-  background-color: rgb(2, 2, 22);
+  background-color: rgb(8, 8, 45);
 }
 
 header {
@@ -9,6 +13,20 @@ header {
 }
 header h1 {
   color: rgb(243, 50, 82);
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#article-card {
+  background-color: rgb(1, 1, 12);
+  max-width: 300px;
+  width: 100%;
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 2px;
 }
 
 /*# sourceMappingURL=main.css.map */

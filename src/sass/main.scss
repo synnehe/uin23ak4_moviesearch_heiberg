@@ -1,10 +1,12 @@
 $darkBlue: rgb(12, 12, 33);
 $dark: rgb(1, 1, 12);
-$bigFont: rgb(243, 50, 82);
-$smallFont: rgb(254, 188, 188);
+$red: rgb(243, 50, 82);
+$lightPink: rgb(249, 206, 206);
+$lightBlue: rgb(67, 67, 124);
+$mediumBlue: rgb(29, 29, 58);
 
 * {
-  color: $smallFont;
+  color: $lightPink;
 }
 
 body {
@@ -17,7 +19,7 @@ header {
   width: 100%;
 
   h1 {
-    color: $bigFont;
+    color: $red;
     font-size: 3rem;
   }
 }
@@ -33,6 +35,21 @@ section {
     margin: 1rem;
     padding: 1rem;
     border-radius: 12px;
+
+    button{
+      background-color: $mediumBlue;
+      outline-color: transparent;
+      border: none;
+      padding: 0.5rem;
+      border-radius: 1rem;
+      font-weight: bold;
+      font-size: 1rem;
+
+      &:hover {
+        background-color: $lightBlue;
+        cursor: pointer;
+      }
+    }
    }
 }
 

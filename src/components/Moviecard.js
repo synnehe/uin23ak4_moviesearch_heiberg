@@ -5,6 +5,7 @@ export default function Article({img, title, plot, year}) {
         <img src={img} alt={title} />
         <h2>Title, year</h2>
         <p>plot</p>
+        <button>Mer om filmen</button>
       </article>
     </section>
   )

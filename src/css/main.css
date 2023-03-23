@@ -1,5 +1,5 @@
 * {
-  color: rgb(249, 206, 206);
+  color: rgb(217, 206, 249);
 }
 
 body {
@@ -31,15 +31,16 @@ section #article-card {
 section #article-card button {
   background-color: rgb(29, 29, 58);
   outline-color: transparent;
-  border: none;
+  border: solid 1.5px transparent;
   padding: 0.5rem;
   border-radius: 1rem;
   font-weight: bold;
   font-size: 1rem;
+  color: rgb(243, 50, 82);
 }
 section #article-card button:hover {
-  background-color: rgb(67, 67, 124);
   cursor: pointer;
+  border-color: rgb(243, 50, 82);
 }
 
 #search-section {

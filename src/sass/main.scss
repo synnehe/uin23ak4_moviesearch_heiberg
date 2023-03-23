@@ -1,12 +1,12 @@
 $darkBlue: rgb(12, 12, 33);
 $dark: rgb(1, 1, 12);
 $red: rgb(243, 50, 82);
-$lightPink: rgb(249, 206, 206);
-$lightBlue: rgb(67, 67, 124);
+$light: rgb(217, 206, 249);
+$lightBlue: rgb(42, 42, 84);
 $mediumBlue: rgb(29, 29, 58);
 
 * {
-  color: $lightPink;
+  color: $light;
 }
 
 body {
@@ -39,15 +39,16 @@ section {
     button{
       background-color: $mediumBlue;
       outline-color: transparent;
-      border: none;
+      border: solid 1.5px transparent;
       padding: 0.5rem;
       border-radius: 1rem;
       font-weight: bold;
       font-size: 1rem;
+      color: $red;
 
       &:hover {
-        background-color: $lightBlue;
         cursor: pointer;
+        border-color: $red;
       }
     }
    }

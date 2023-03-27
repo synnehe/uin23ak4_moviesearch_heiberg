@@ -23,10 +23,11 @@ export default function Movie({movies}) {
 
   return (
     <>
-    <h1>{movie?.Title}</h1>
+    <h1>{movie?.Title} ({movie?.Year})</h1>
     <ul>
-      <li>{movie?.Year}</li>
+      <li>{movie?.Released}</li>
       <li>{movie?.Runtime}</li>
+      <li>{movie?.Genre}</li>
     </ul>
     <img src={movie?.Poster} alt={movie?.Title + "poster"}/>
     <p>{movie?.Plot}</p>

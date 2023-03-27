@@ -1,7 +1,7 @@
 
 export default function Moviecard({movies}) {
   return(
-    <>
+    <body>
     {movies?.map((movie, index) => (
     <section>
       <article id="article-card">
@@ -12,6 +12,6 @@ export default function Moviecard({movies}) {
       </article>
     </section>
     ))}
-    </>
+    </body>
   )
 }

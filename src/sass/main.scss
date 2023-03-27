@@ -11,6 +11,8 @@ $mediumBlue: rgb(29, 29, 58);
 
 body {
   background-color: $darkBlue;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 header {
@@ -27,12 +29,13 @@ header {
 section {
   display: flex;
   flex-wrap: wrap;
+  margin-top: 2rem;
 
   #article-card {
     background-color: $dark;
     max-width: 300px;
     width: 100%;
-    margin: 1rem;
+    margin: 0.5rem;
     padding: 1rem;
     border-radius: 12px;
 
@@ -60,7 +63,7 @@ section {
 
   #search-bar {
     height: 50px;
-    width: 200px;
+    width: 250px;
     border-radius: 2rem;
     border: none;
     background-color: $dark;

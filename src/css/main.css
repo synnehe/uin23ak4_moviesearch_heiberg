@@ -4,6 +4,8 @@
 
 body {
   background-color: rgb(12, 12, 33);
+  display: flex;
+  flex-wrap: wrap;
 }
 
 header {
@@ -19,12 +21,13 @@ header h1 {
 section {
   display: flex;
   flex-wrap: wrap;
+  margin-top: 2rem;
 }
 section #article-card {
   background-color: rgb(1, 1, 12);
   max-width: 300px;
   width: 100%;
-  margin: 1rem;
+  margin: 0.5rem;
   padding: 1rem;
   border-radius: 12px;
 }
@@ -49,7 +52,7 @@ section #article-card button:hover {
 }
 #search-section #search-bar {
   height: 50px;
-  width: 200px;
+  width: 250px;
   border-radius: 2rem;
   border: none;
   background-color: rgb(1, 1, 12);

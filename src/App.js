@@ -5,11 +5,12 @@ import {Route, Routes} from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import Moviecard from './components/Moviecard';
 import Main from './components/Main';
+import Movie from './components/Movie';
 
 function App() {
 
   const [movies, setMovies] = useState([])
-  const [search, setSearch] = useState("Pirates+of+the+caribbean")
+  const [search, setSearch] = useState("james+bond")
 
   const getMovies = async() => {
     const response = await fetch(`http://www.omdbapi.com/?s=${search}&type=movie&plot=short&apikey=74871aa1&`)
@@ -27,7 +28,7 @@ function App() {
     <>
       <Routes>
         <Route index element={<Main movies={movies} setSearch={setSearch} getMovies={getMovies}/>}/>
-        <Route path=':slug' element={<Main/>}/>
+        <Route path='/test' element={<Movie movies={movies}/>}/>
       </Routes>
     </>
   );

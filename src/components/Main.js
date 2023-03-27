@@ -1,15 +1,23 @@
-import { Link } from "react-router-dom"
+import { Link, useParams } from "react-router-dom"
 import Moviecard from "./Moviecard"
+import Header from "./Header"
 
-export default function Main({movies}) {
+export default function Main({movies, setSearch, getMovies}) {
+  //const {slug} = useParams()
+  //const movie = movies.find((movie) => movie?.movie?.label.replace(/\s/g, '-').toLowerCase() === slug)
+
 
   return( 
-    <main>
-    {movies.map((movie, key) => (
-      <Link to={movie?.movie?.label.replace(/\s/g, '-').toLowerCase()}>
-        <Moviecard movies={movies} key={key} title={movie?.movie?.title} />
+    <>
+    <Header setSearch={setSearch} getMovies={getMovies}/>
+    <body>
+      <Link to="">
+        <Moviecard movies={movies}/>
       </Link>
-    ))}
-    </main>
+      {!movies ? <p id="error-message">No movies found</p> : null}
+    </body>
+    </>
   )
 }
+
+// {movie?.label.replace(/\s/g, '-').toLowerCase()}

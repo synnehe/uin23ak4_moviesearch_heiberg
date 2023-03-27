@@ -1,17 +1,16 @@
 
 export default function Moviecard({movies}) {
   return(
-    <body>
+    <div id="movie-results">
     {movies?.map((movie, index) => (
     <section>
-      <article id="article-card">
-        <img src={movie.Poster} alt={movie.Title + " Poster"}/>
-        <h2 key={movie.Title.index}>{movie.Title}, {movie.Year}</h2>
-        <p>{movie.plot}</p>
+      <article key={index} id="article-card">
+        <img src={movie.Poster} alt={movie.Title + " Poster"} placeholder=""/>
+        <h2>{movie.Title}, {movie.Year}</h2>
         <button>Mer om filmen</button>
       </article>
     </section>
     ))}
-    </body>
+    </div>
   )
 }

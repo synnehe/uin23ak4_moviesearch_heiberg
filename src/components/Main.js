@@ -7,7 +7,7 @@ export default function Main({movies, setSearch, getMovies}) {
     <Header setSearch={setSearch} getMovies={getMovies}/>
     <body>
         <Moviecard movies={movies}/>
-      {!movies ? <p id="error-message">No movies found</p> : null}
+        {!movies ? <p id="error-message">No movies found</p> : null}
     </body>
     </>
   )

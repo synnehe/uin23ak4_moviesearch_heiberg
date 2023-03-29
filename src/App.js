@@ -1,9 +1,7 @@
 import './App.css';
 import './css/main.css';
-import Header from './components/Header';
 import {Route, Routes} from 'react-router-dom';
 import { useEffect, useState } from 'react';
-import Moviecard from './components/Moviecard';
 import Main from './components/Main';
 import Movie from './components/Movie';
 
@@ -23,12 +21,26 @@ function App() {
     getMovies()
   },[])
 
+  const [movie, setMovie] = useState([])
+  const [movieId, setMovieId] = useState("tt2382320")
+
+  const getMovie = async() => {
+    const response = await fetch(`http://www.omdbapi.com/?i=${movieId}&type=movie&plot=full&apikey=74871aa1&`)
+    const data = await response.json()
+    console.log(data)
+    setMovie(data)
+  }
+
+  useEffect(() =>{
+    getMovie()
+  },[movieId])
+
 
   return (
     <>
       <Routes>
         <Route index element={<Main movies={movies} setSearch={setSearch} getMovies={getMovies}/>}/>
-        <Route path='/test' element={<Movie movies={movies}/>}/>
+        <Route path='/:slug' element={<Movie movie={movie} movies={movies} setMovie={setMovie} movieId={movieId} setMovieId={setMovieId} getMovie={getMovie}/>}/>
       </Routes>
     </>
   );

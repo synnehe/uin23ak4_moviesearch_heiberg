@@ -1,6 +1,6 @@
 import Search from "./Search";
 
-export default function Title({setSearch, getMovies, movies}) {
+export default function Title({setSearch, getMovies}) {
   return(
     <header>
       <h1>Moviesearch</h1>

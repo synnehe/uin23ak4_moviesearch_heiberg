@@ -1,8 +1,6 @@
-import { useEffect } from "react"
-import { Link, useNavigate, useParams } from "react-router-dom"
-import Moviecard from "./Moviecard"
+import { useParams } from "react-router-dom"
 
-export default function Movie({movies, movie, setMovieId, getMovie, movieId, setMovie}) {
+export default function Movie({movies, movie, setMovieId}) {
 
   const {slug} = useParams()
   const currentMovie = movies.find((m) => m?.imdbID.replace(/\s/g, "-").toLowerCase() === slug)

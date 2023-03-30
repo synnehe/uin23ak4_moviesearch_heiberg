@@ -1,7 +1,6 @@
-import { Link, useNavigate, useParams } from "react-router-dom"
-import Movie from "./Movie"
+import { Link } from "react-router-dom"
 
-export default function Moviecard({movies, movie, getMovie, movieId}) {
+export default function Moviecard({movies, getMovie, movieId}) {
 
   return(
     <div id="movie-results">

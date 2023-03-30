@@ -40,7 +40,7 @@ function App() {
     <>
       <Routes>
         <Route index element={<Main movies={movies} setSearch={setSearch} getMovies={getMovies}/>}/>
-        <Route path='/:slug' element={<Movie movie={movie} movies={movies} setMovie={setMovie} movieId={movieId} setMovieId={setMovieId} getMovie={getMovie}/>}/>
+        <Route path='/:slug' element={<Movie movie={movie} movies={movies} setMovieId={setMovieId}/>}/>
       </Routes>
     </>
   );
